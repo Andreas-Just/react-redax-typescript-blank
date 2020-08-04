@@ -1,0 +1,1 @@
+# react-redax-typescript-blank
