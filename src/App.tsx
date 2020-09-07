@@ -5,6 +5,7 @@ import { Header } from 'semantic-ui-react';
 import { loadFlights } from './store';
 import * as selectors from './store/selectors';
 import './App.scss';
+import { getMovies } from './api/getMovies';
 
 function App() {
   const dispatch = useDispatch();
@@ -12,6 +13,7 @@ function App() {
 
   useEffect(() => {
     dispatch(loadFlights());
+    getMovies('Star') // .env example
   }, [dispatch]);
 
   return (
